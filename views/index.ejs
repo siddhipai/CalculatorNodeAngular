@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html data-ng-app="cal">
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src = "./routes/calculatorService.js"></script>
+  </head>
+    <body>
+    <div align = "center" data-ng-app>
+    <h1>Welcome to my <%= title %> service</h1>
+  <div data-ng-controller = "calController">
+          <h2>Enter first number</h2>
+          <input type = "number" data-ng-model ="number1" id = "number1"/>{{number1}}
+
+
+          <h2>Enter second number</h2>
+          <input type = "number" id = "number2" data-ng-model ="number2"/>{{number2}}
+
+      <br/>
+      <br/>
+        <input type ="button" value="Addition" data-ng-click="add()" data-ng-model="add" >
+        <input type ="button" value="Subtraction" data-ng-click="sub()" data-ng-model="sub" >
+        <input type ="button" value="Multiplication" data-ng-click="mul()" data-ng-model="mul" >
+        <input type ="button" value="Division" data-ng-click="div()" data-ng-model="div" ><br>
+      </div>
+    </div>
+      </div>
+ </body>
+</html>
